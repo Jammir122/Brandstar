@@ -1,0 +1,14 @@
+:root {
+    /* Colores principales */
+    --primary-color: #c3fb7c; /* Color principal (para texto, encabezado, etc.) */
+    --secondary-color: #555; /* Color secundario (para textos secundarios, enlaces, etc.) */
+    --background-color: #c3fb7c; /* Color de fondo de la página */
+    --card-background: #fff; /* Fondo de las tarjetas de productos */
+    --text-color: #0646b3; /* Color de texto blanco */
+    --card-border: #ddd; /* Borde de las tarjetas */
+    --button-background: #007bff; /* Fondo del botón */
+    --button-hover-background: #0056b3; /* Fondo del botón al pasar el cursor */
+    --highlight-color: #FFD700; /* Color dorado para enlaces y acentos */
+    --discount-color: #28a745; /* Color verde para precios con descuento */
+    --price-strike-color: #888; /* Color para el precio tachado */
+}

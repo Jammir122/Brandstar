@@ -1,0 +1,138 @@
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+.card-text del {
+    color: var(--price-strike-color);
+}
+
+.card-text .text-success {
+    color: var(--discount-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+    transform: translateY(-2px);
+}
+
+
+/* Media query para pantallas de dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%; /* Las tarjetas ocupan el 100% del ancho disponible */
+        margin: 10px 0; /* Ajusta los márgenes */
+    }
+
+    header {
+        padding: 10px 15px; /* Menos padding en el header */
+    }
+}

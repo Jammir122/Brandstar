@@ -1,0 +1,76 @@
+/* Estilos para el footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer .footer-section {
+    width: 30%;
+}
+
+.footer .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer .footer-section p,
+.footer .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+/* Media query para pantallas de dispositivos móviles */
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction:column ;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer .footer-bottom {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
