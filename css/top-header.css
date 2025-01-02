@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+}
+
+/* Header principal */
+.topheader {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center;
+    background-color: var(--color-tema);
+}
+
+/* Imagen del header */
+.topnav img {
+    height: 280px;
+    width: 100%;
+}
+
+/* Botones en el header */
+
+.Busqueda, .bag {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;   
+}
+.Busqueda {
+    right: 200px; /* Espacio entre el icono de búsqueda y el logo */
+    top: 122px;
+}
+.icon-container .bag {
+    right: 30px; /* Espacio entre el icono de búsqueda y la tienda */
+    top: 65px; /* Espacio entre arriba y el icono de tienda */
+    display: flex;
+    justify-content: center; /* Centrar los íconos debajo de la imagen */
+    gap: 20px; /* Espaciado entre lupa y bag */
+    transform: scale(2.5);
+    margin-top: 100px;
+}
+.icon-container .bag:hover {
+    transform: scale(2.6); /* Ajusta la escala para que se vea como los demás */
+}
+.bag svg {
+    height: 80px;
+    width: 80px;
+}
+.Busqueda:hover, img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Menú principal */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-tema);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: relative; /* Evita conflictos de posicionamiento */
+    z-index: 1; /* Asegura que el menú esté visible */
+}
+
+/* Lista principal del menú */
+nav ul {
+    display: flex;
+    gap: 90px; /* Espaciado entre los elementos del menú */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Enlaces del menú */
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto); /* Cambiar color del texto según tema */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+nav ul li a:hover {
+    color: var(--color-texto-hover);
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Dropdown (submenú) */
+nav ul li {
+    position: relative;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Se posiciona debajo del elemento principal */
+    left: 0;
+    background-color: var(--color-submenu);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    min-width: 90px; /* Ancho mínimo del submenú */
+    z-index: 10;
+}
+.dropdown li {
+    margin: 7px 0;
+}
+.dropdown li a {
+    color: var(--color-texto);
+    font-size: 16px;
+    font-weight: normal;
+}
+.dropdown li a:hover {
+    color: var(--color-texto-hover);
+}
+nav ul li:hover .dropdown {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .topheader {
+        align-items: center; /* Centrar elementos dentro del header */
+    }
+
+    .topnav img {
+        height: auto;
+        width: 100%; /* Mantener proporción */
+    }
+
+    .Busqueda, .bag {
+        position: static; /* Quitar posicionamiento absoluto */
+        margin: 10px; /* Espaciado uniforme */
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center; /* Centrar los íconos debajo de la imagen */
+        gap: 40px; /* Espaciado entre lupa y bag */
+        margin-top: -160px;
+        margin-left: 50px;
+        margin-bottom: -50px;
+    }
+
+    .menu {
+        flex-direction: column; /* Cambiar a formato vertical */
+        align-items: center;
+        padding: 15px;
+        margin-top: 20px; /* Espaciado entre menú y los íconos */
+    }
+    .icon-container .bag{
+        display: flex;
+        justify-content: center; /* Centrar los íconos debajo de la imagen */
+        gap: 20px; /* Espaciado entre lupa y bag */
+        transform: scale(2);
+        margin-top: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px; /* Menos espacio entre elementos */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reducir tamaño del texto */
+    }
+}

@@ -1,0 +1,48 @@
+.grid {
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+.item1 {
+    position: relative;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.item2 {
+    position: relative;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.item3 {
+    position: relative;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.grid img {
+    height: 500px;
+    width: 100%; /* Ajusta el tamaño al ancho deseado */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+.item p {
+    margin-top: 10px;
+    font-size: 16px; /* Tamaño del texto */
+    color: var(--color-texto); /* Color del texto */
+}
+@media (max-width: 768px) {
+    .grid {
+        padding: 20px;
+        display: flex;
+        flex-direction: column; /* Cambia la orientación a columna */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Mantiene el espacio entre los elementos */
+    }
+
+    .grid img {
+        height: auto; /* Permite que las imágenes mantengan su proporción */
+        width: 90%; /* Ajusta el ancho para que sea más pequeño en móviles */
+    }
+}

@@ -1,125 +1,134 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/variable-global.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./css/variable-global.css">
+    <link rel="stylesheet" href="./css/top-header.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/packs.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <title>Brandstar</title>
 </head>
 <body>
-    <header>
-        <h1>Nombre de la empresa</h1>
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#nuevos">Nuevos</a>
-            <a href="html/ofertas.html">Ofertas</a>
-            <a href="#contacto">Contacto</a>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#">
+                <img src="./image/brandstar.png" alt="logo de la empresa">
+            </a>
+            <div class="icon-container">
+                <button class="Busqueda"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"/></svg></button>
+                <button class="bag"><svg>                <?xml version="1.0" ?><svg height="32" id="svg2" version="1.1" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs6"/><g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,32)"><path d="m 8.0926596,15.429785 8.2762924,-0.009 c 0.29522,-3.3e-4 0.503205,-0.40222 0.532917,-0.89985 l 0.414495,-6.9418698 c 0.02971,-0.49763 -0.237696,-0.89984 -0.532938,-0.89984 H 7.7583084 c -0.2952399,0 -0.5570339,0.40191 -0.5329142,0.89985 l 0.3343464,6.9000098 c 0.024134,0.49793 0.2376803,0.95085 0.532919,0.95053 z" id="path243" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:0.77409285;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"/><path d="m 14.876087,15.94637 a 2.6054041,2.6942251 0 0 1 -1.306789,2.335703 2.6054041,2.6942251 0 0 1 -2.609479,-0.0073 2.6054041,2.6942251 0 0 1 -1.2945014,-2.343008" id="path245" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:0.77409285;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"/></g></svg></svg></button>
+            </div>
         </nav>
+        <div class="menu">
+                <nav>
+                    <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li>
+                                <a href="#">Ropa</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Remeras</a></li>
+                                    <li><a href="#">Buzos</a></li>
+                                    <li><a href="#">Bermudas</a></li>
+                                    <li><a href="#">Jean</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Guia de Talles</a></li>
+                            <li><a href="#">Cambios</a></li>
+                            <li><a href="#">Cuidados</a></li>
+                        </ul>
+                    </nav>
+                </div>
     </header>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <main>
+        <section class="grid">
+            <div class="item1">
+                <img src="./image/agus bob.png" alt="Imagen 1">
+                <p>Para tod@s l@s bosterit@s 🥵💦</p>
+            </div>
+            <div class="item2">
+                <img src="./image/andre.png" alt="Imagen 2">
+                <p>Para l@s loler@s mancos 🥵💦</p>
+            </div>
+            <div class="item3">
+                <img src="./image/Nico.png" alt="Imagen 3">
+                <p>Para secar conchas 🥵💦 🥵💦</p>
+            </div>
+        </section>
+        <div>
+            <h2>Combo💸🤑💸 y no el sasha ferro😔</h2>
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active c-item">
-                <img src="https://via.placeholder.com/800x300/FF5733/FFFFFF?text=Ropa+1" class="d-block w-100 c-img" alt="Slide 1">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="mt-5 fs-3 text-uppercase">Moda Exclusiva</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Tendencia 2024</h1>
-                </div>
+        <section class="packs">
+            <div class="pack-item-a">
+                <img src="./image/agus bob.png" alt="Pack 3 Remeras">
+                <p>Pack 2 boludos</p>
+                <p class="price">$91.220,18</p>
+                <p class="discount">$1 con Transferencia</p>
             </div>
-            <div class="carousel-item c-item">
-                <img src="https://via.placeholder.com/800x300/33FF57/FFFFFF?text=Ropa+2" class="d-block w-100 c-img" alt="Slide 2">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="text-uppercase fs-3 mt-5">Ofertas Especiales</p>
-                    <p class="display-1 fw-bolder text-capitalize">Precios Bajos</p>
-                </div>
+            <div class="pack-item-b">
+                <img src="./image/andre.png" alt="Pack 3 Alternativo">
+                <p>black pack</p>
+                <p class="price">$100.000.000,00</p>
+                <p class="discount">$0 con Transferencia</p>
             </div>
-            <div class="carousel-item c-item">
-                <img src="https://via.placeholder.com/800x300/3357FF/FFFFFF?text=Ropa+3" class="d-block w-100 c-img" alt="Slide 3">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="text-uppercase fs-3 mt-5">Estilo Único</p>
-                    <p class="display-1 fw-bolder text-capitalize">Nuevas Colecciones</p>
-                </div>
+            <div class="pack-item-c">
+                <img src="./image/Nico.png"alt="Pack Washed">
+                <p>virgin white</p>
+                <p class="price">$60.000,00</p>
+                <p class="discount">$1 con Transferencia</p>
             </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <main class="container">
-        <div class="card">
-            <img src="image/agus bob.png" alt="Producto 1">
-            <div class="card-body">
-                <h3>Producto 1</h3>
-                <p>$25.00</p>
-                <button>Comprar</button>
+            <div class="pack-item-d">
+                <img src="./image/agus bob grande.png"alt="Pack Washed">
+                <p>Pack 2 boludos</p>
+                <p class="price">$91.220,18</p>
+                <p class="discount">$1 con Transferencia</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="image/andre.png" alt="Producto 2">
-            <div class="card-body">
-                <h3>Producto 2</h3>
-                <p>$30.00</p>
-                <button>Comprar</button>
+            <div class="pack-item-e">
+                <img src="./image/andres de grande.jpg"alt="Pack Washed">
+                <p>black pack</p>
+                <p class="price">$100.000.000,00</p>
+                <p class="discount">$0 con Transferencia</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="image/Nico.png" alt="Producto 3">
-            <div class="card-body">
-                <h3>Producto 3</h3>
-                <p>$20.00</p>
-                <button>Comprar</button>
+            <div class="pack-item-f">
+                <img src="./image/nico de grande.jpg"alt="Pack Washed">
+                <p>virgin white</p>
+                <p class="price">$60.000,00</p>
+                <p class="discount">$1 con Transferencia</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="image/Mateo.jpg" alt="Producto 3">
-            <div class="card-body">
-                <h3>Producto 4</h3>
-                <p>$20.00</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/IMG_1944.JPEG" alt="Producto 3">
-            <div class="card-body">
-                <h3>Producto 5</h3>
-                <p>$20.00</p>
-                <button>Comprar</button>
-            </div>
-        </div>
+        </section>
     </main>
-
-    <footer class="footer" id="contacto">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>Acerca de Nosotros</h3>
-                <p>Somos una tienda de ropa con las últimas tendencias y precios accesibles. Ofrecemos moda exclusiva para todos los gustos.</p>
+    <footer>
+        <section class="footer-content">
+            <div class="newsletter">
+                <p>UNITE PARA TENER SEXO.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">➔</button>
+                </form>
             </div>
-            <div class="footer-section contact">
-                <h3>Contacto</h3>
-                <p><strong>Email:</strong> gordoelquelee@gmail.com</p>
-                <p><strong>Teléfono:</strong> +123 456 789</p>
-                <p><strong>Dirección:</strong> falopita 66, falopa, falopalandia</p>
+            <div class="contact-info">
+                <h4>CONTACTANOS</h4>
+                <p>11 6236-1689</p>
+                <p><a href="mailto:hackeadoputooo@gmail.com">brandstar@gmail.com</a></p>
+                <p><a href="https://www.google.com/maps/place/Parque+Tres+de+Febrero/@-34.5708757,-58.4196778,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb59f0e33d4eb:0xb4d7c2d0044d32e!8m2!3d-34.5708801!4d-58.4171029!16zL20vMGRkNDg0?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Lugar de trabajo de algunos</a></p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
-        </div>
+        </section>
+        <section class="payment-methods">
+            <img src="./image/visa@2x.png" alt="Visa">
+            <img src="./image/mastercard@2x.png" alt="Mastercard">
+            <img src="./image/paypal@2x.png" alt="PayPal">
+            <!-- Agrega aquí más íconos de métodos de pago -->
+        </section>
+        <section class="footer-bottom">
+            <p>Copyright Brandstar - 2025. Todos los derechos reservados.</p>
+            <p>Creado con PorHub</p>
+        </section>
     </footer>
+    
+    <link rel="stylesheet" href="./js/grid.js">
 </body>
 </html>

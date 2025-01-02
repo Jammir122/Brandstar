@@ -1,0 +1,240 @@
+h2{
+    text-align: center;
+}
+
+.packs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pack-item {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.pack-item p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item .discount {
+    color: #888;
+    font-size: 14px;
+}
+.pack-item-a {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-a img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-a p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-a .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-a .discount {
+    color: #888;
+    font-size: 14px;
+}
+
+.pack-item-a:hover img{
+    content: url(/image/agus\ bob\ grande.png);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
+
+.pack-item-b {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-b img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-b p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-b .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-b .discount {
+    color: #888;
+    font-size: 14px;
+}
+
+.pack-item-b:hover img{
+    content: url(/image/andres\ de\ grande.jpg);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
+
+.pack-item-c {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-c img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-c p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-c .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-c .discount {
+    color: #888;
+    font-size: 14px;
+}
+.pack-item-c:hover img{
+    content: url(/image/nico\ de\ grande.jpg);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
+.pack-item-d {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-d img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-d p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-d .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-d .discount {
+    color: #888;
+    font-size: 14px;
+}
+.pack-item-d:hover img{
+    content: url(/image/agus\ bob.png);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
+.pack-item-e {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-e img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-e p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-e .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-e .discount {
+    color: #888;
+    font-size: 14px;
+}
+.pack-item-e:hover img{
+    content: url(/image/andre.png);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
+.pack-item-f {
+    text-align: center;
+    background-color: var(--color-submenu);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pack-item-f img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out; /* Suaviza la transición de la imagen */
+}
+
+.pack-item-f p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.pack-item-f .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.pack-item-f .discount {
+    color: #888;
+    font-size: 14px;
+}
+.pack-item-f:hover img{
+    content: url(/image/Nico.png);
+    width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
+}
