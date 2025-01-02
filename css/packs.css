@@ -67,7 +67,7 @@ h2{
 }
 
 .pack-item-a:hover img{
-    content: url(/image/agus\ bob\ grande.png);
+    content: url(../image/agus\ bob\ grande.png);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
 
@@ -102,7 +102,7 @@ h2{
 }
 
 .pack-item-b:hover img{
-    content: url(/image/andres\ de\ grande.jpg);
+    content: url(../image/andres\ de\ grande.jpg);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
 
@@ -136,7 +136,7 @@ h2{
     font-size: 14px;
 }
 .pack-item-c:hover img{
-    content: url(/image/nico\ de\ grande.jpg);
+    content: url(../image/nico\ de\ grande.jpg);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
 .pack-item-d {
@@ -169,7 +169,7 @@ h2{
     font-size: 14px;
 }
 .pack-item-d:hover img{
-    content: url(/image/agus\ bob.png);
+    content: url(../image/agus\ bob.png);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
 .pack-item-e {
@@ -202,7 +202,7 @@ h2{
     font-size: 14px;
 }
 .pack-item-e:hover img{
-    content: url(/image/andre.png);
+    content: url(../image/andre.png);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
 .pack-item-f {
@@ -235,6 +235,6 @@ h2{
     font-size: 14px;
 }
 .pack-item-f:hover img{
-    content: url(/image/Nico.png);
+    content: url(../image/Nico.png);
     width: 100%; /* Mantiene el mismo tamaño para que no se mueva */
 }
